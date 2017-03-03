@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAO;EACL,UAAU,EAAE,IAAI;EAChB,kBAAU;IACR,OAAO,EAAE,GAAG",
+"sources": ["../sass/shame.scss"],
+"names": [],
+"file": "shame.css"
+}

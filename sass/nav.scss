@@ -1,0 +1,131 @@
+.navigation{
+  border-radius: 4px;
+  background: $wet-asphalt;
+  overflow: hidden;
+  &.alizarin{
+    background: $alizarin;
+  }
+  &.pomegranate{
+    background: $pomegranate;
+  }
+  &.carrot{
+    background: $carrot;
+  }
+  &.fixed{
+    position: fixed;
+    z-index: 100;
+    &.top{
+      top: 0;
+    }
+    &.bottom{
+      bottom: 0;
+    }
+  }
+  &.no-border{
+    border-radius: 0;
+  }
+  &.fit{
+    width: 100%;
+  }
+  &::after{
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  .brand{
+    float: left;
+    font-weight: 500;
+    background: $emerald;
+    color: $wet-asphalt;
+    h5{
+      margin: 0;
+    }
+  }
+  input{
+    &.fit{
+      width: 100%;
+    }
+    margin: 12px 10px;
+    color: $white;
+  }
+  .burger{
+    display: none;
+    position: absolute;
+    right: 25px;
+    background: none;
+    padding: 20px 25px;
+    border: 0px;
+    span{
+      display: block;
+      background: $white;
+      width: 5px;
+      height: 5px;
+      border-radius: 3px;
+      margin-bottom: 3px;
+    }
+    &:hover{
+      background: rgba(255,255,255,0.5);
+    }
+  }
+  a{
+    text-decoration: none;
+    color: $white;
+    padding: 20px 25px;
+    display: block;
+    &:hover{
+      background: rgba(255,255,255,0.5)
+    }
+    &.xlink{
+      &:hover{
+        background: none;
+      }
+    }
+  }
+  ul{
+    padding: 0px;
+    margin: 0px;
+    &.nav{
+      float: left;
+      &.fit{
+        float: none;
+        width: 100%;
+        li{
+          float: left;
+        }
+      }
+      &.three{
+        li{
+          width: 33.33%;
+        }
+      }
+      &.four{
+        li{
+          width: 25%;
+        }
+      }
+      &.five{
+        li{
+          width: 20%;
+        }
+      }
+    }
+    &.option{
+      float: right;
+    }
+    li{
+      display: inline-block;
+    }
+  }
+}
+
+
+@media (max-width: 920px) {
+  ul{
+    li.link{
+      display: none;
+    }
+  }
+  .burger{
+    display: block !important;
+  }
+}
