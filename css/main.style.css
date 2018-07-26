@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: bitter;
+    src: url(../fonts/Bitter-Bold.ttf);
+}
+@font-face{
+    font-family: bitter-reg;
+    src: url(../fonts/Bitter-regular.ttf);
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #191919;
+}
+
+h1,h2,h3,h4,h5,h6,p,span{
+    margin: 20px 0px;
+    color: #C59250;
+    font-family: bitter;
+    letter-spacing: 2px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 20px 0px;
+    color: #C59250;
+}
+
+p,span{
+    line-height: 20px;
+    letter-spacing: 2px;
+    font-family: bitter-reg;
+    color: rgba(255,255,255,0.5);
+}
+a{
+    color: #B39772;
+}
+
+.pull-left{
+    float: left;
+}
+
+.card--clear::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.card{
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto
+}
+
+.card__img{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin: 13px auto;
+    border-radius: 10px;
+}
+
+.card__img img{
+    width: 100%;
+    height: auto;
+}
+
+.card__info{
+    margin: 10px 0px;
+}
+
+.card--margl20{
+    margin-left: 20px;
+}
+
+.card--marg50{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.icon{
+  font-size: 35px; 
+  padding: 0px 20px; 
+}
+
+.icon--gold{
+    color: #C59250;
+}
+
+.color-normal{
+    color: rgba(255,255,255,0.5);
+}
+
+.color-biege{
+    color: #B39772;
+}
